@@ -20,10 +20,12 @@ def simulate_experiment(num_people, num_trials):
         else:
             successes += 1
 
-    print(successes)
     return successes / num_trials
 
 
+people = int(input("Enter the number of people who will seat at the table: "))
+trials = int(input("Enter the number of simulations: "))
+
 print(
-    f"The probability that no two people sit next to each other at both lunch and dinner is: {simulate_experiment(100, 10000)}"
+    f"The probability that no two people sit next to each other at both lunch and dinner is: {simulate_experiment(people, trials)}"
 )
