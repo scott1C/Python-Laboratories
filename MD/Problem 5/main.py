@@ -30,7 +30,7 @@ def uncrypted_text(encrypted_string, key):
     return "".join(text)
 
 
-combinations = ["faf", "job", "noreg"]
+combinations = ["faf", "job"]
 encrypted_message = "OOGNVMTNTCLUOGZSZSHTXAZGMOMEPKWDDQM"
 for i in combinations:
     key = generate_key(encrypted_message, i)
