@@ -21,6 +21,7 @@ def dfs(graph, visited, i):
         return True
 
     visited[i] = -1
+    print(graph)
     for j in graph[i]:
         if not dfs(graph, visited, j):
             return False
