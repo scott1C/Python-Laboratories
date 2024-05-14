@@ -25,4 +25,4 @@ def scale_image(image, scale_factor):
 image = np.array(Image.open(path))
 scaled_image = scale_image(image, 2)
 
-Image.fromarray(scaled_image).save('scaled_image.jpg')
+Image.fromarray(scaled_image).save(os.path.join(os.path.dirname(__file__), 'scaled_image.jpg'))
